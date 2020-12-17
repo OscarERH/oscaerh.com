@@ -23,4 +23,4 @@ jobs:
       - run: npm run build
         env:
           CI: ""
-      - run: rsync -avz --delete out/ ${{ secrets.USER }}@${{ secrets.HOST }}:${{ secrets.DESTINATION }}
+      - run: rsync -avz --delete . ${{ secrets.USER }}@${{ secrets.HOST }}:${{ secrets.DESTINATION }}
