@@ -6,6 +6,12 @@ export default class Document extends NextDocument {
       <Html lang="en">
         <Head>
           <title>OscarERH</title>
+          <meta name="description" content="Desarrollador web" />
+          <meta
+            name="keywords"
+            content="Programador, Developer, React, Laravel"
+          />
+          <meta name="author" content="Oscar Ruiz" />
         </Head>
         <body className="antialiased">
           <Main />
