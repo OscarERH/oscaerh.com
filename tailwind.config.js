@@ -6,6 +6,9 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ['Inter'],
+    },
     extend: {
       colors: {
         green: '#1DB954',
