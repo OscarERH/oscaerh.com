@@ -4,12 +4,12 @@ export default function Header() {
   const [openMenu, setOpenMenu] = useState(false)
 
   return (
-    <div className="relative bg-white">
+    <div className="relative bg-black">
       <div className="mx-auto">
         <div className="flex px-4 sm:px-6 justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a
-              className="text-xl leading-none font-extrabold text-gray-900 tracking-tight"
+              className="text-xl leading-none font-extrabold tracking-tight text-white"
               href="#"
             >
               OscarERH
@@ -41,23 +41,23 @@ export default function Header() {
           </div>
           <nav className="hidden md:flex space-x-10">
             <div className="relative">
-              <button
-                type="button"
-                className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              >
-                <span>Inicio</span>
-              </button>
+            <a
+              href="#"
+              className="text-base font-medium text-gray-200 hover:text-white"
+            >
+              Inicio
+            </a>
               <div className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"></div>
             </div>
             <a
               href="#"
-              className="text-base font-medium text-gray-500 hover:text-gray-900"
+              className="text-base font-medium text-gray-200 hover:text-white"
             >
               Acerca de mi
             </a>
             <a
               href="#"
-              className="text-base font-medium text-gray-500 hover:text-gray-900"
+              className="text-base font-medium text-gray-200 hover:text-white"
             >
               Portafolio
             </a>
@@ -65,7 +65,7 @@ export default function Header() {
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
               href="#"
-              className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+              className="whitespace-nowrap text-base font-medium text-gray-200 hover:text-white"
             >
               Blog
             </a>
