@@ -19,7 +19,7 @@ export default function Header() {
             <button
               onClick={() => setOpenMenu(true)}
               type="button"
-              className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              className=" rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
             >
               <span className="sr-only">Open menu</span>
               <svg
@@ -41,12 +41,12 @@ export default function Header() {
           </div>
           <nav className="hidden md:flex space-x-10">
             <div className="relative">
-            <a
-              href="#"
-              className="text-base font-medium text-gray-200 hover:text-white"
-            >
-              Inicio
-            </a>
+              <a
+                href="#"
+                className="text-base font-medium text-gray-200 hover:text-white"
+              >
+                Inicio
+              </a>
               <div className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"></div>
             </div>
             <a
@@ -86,7 +86,7 @@ export default function Header() {
                 <button
                   onClick={() => setOpenMenu(false)}
                   type="button"
-                  className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                  className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                 >
                   <span className="sr-only">Close menu</span>
                   <svg
