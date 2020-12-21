@@ -237,6 +237,55 @@ export default function Home(): ReactElement {
           </div>
         </div>
       </div>
+      <div className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="lg:text-center">
+            <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-black sm:text-4xl">
+              Portafolio
+            </h2>
+          </div>
+          <div className="mt-10">
+            <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+              <div className="flex">
+                <div className="ml-4">
+                  <dt className="text-lg font-semibold text-black">
+                    <a
+                      href="https://oscarerh.com"
+                      className="text-green"
+                      target="_blank"
+                    >
+                      OscarERH
+                    </a>
+                  </dt>
+                  <dd className="mt-2 text-base text-gray-500">
+                    Mi sitio personal escrito en TypeScript con NextJS.
+                  </dd>
+                  <div className="h-50 w-50 shadow-md">
+                    <img src="https://i.imgur.com/mhkDBUG.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div className="flex">
+                <div className="ml-4">
+                  <dt className="text-lg font-semibold text-black">
+                    <a
+                      href="https://omnico.app"
+                      className="text-green"
+                      target="_blank"
+                    >Omnico</a>
+                  </dt>
+                  <dd className="mt-2 text-base text-gray-500">
+                    Sistema de gestión de ventas multicanal basado en SaaS.
+                  </dd>
+                  <div className="h-50 w-50 shadow-md">
+                    <img src="https://i.imgur.com/ca6c72F.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
