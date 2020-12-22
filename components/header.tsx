@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import { useState } from 'react'
+import { ReactElement, useState } from 'react'
 
-export default function Header() {
+export default function Header(): ReactElement {
   const [openMenu, setOpenMenu] = useState(false)
 
   return (
@@ -13,11 +13,13 @@ export default function Header() {
         >
           <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
             <div className="flex items-center justify-between w-full md:w-auto">
-              <a href="#">
-                <span className="text-xl leading-none font-extrabold tracking-tight">
-                  OscarERH
-                </span>
-              </a>
+              <Link href="/">
+                <a>
+                  <span className="text-xl leading-none font-extrabold tracking-tight">
+                    OscarERH
+                  </span>
+                </a>
+              </Link>
               <div className="-mr-2 flex items-center md:hidden">
                 <button
                   type="button"
@@ -47,21 +49,21 @@ export default function Header() {
             </div>
           </div>
           <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-            <a href="#" className="font-medium text-gray-500 hover:text-black">
-              Inicio
-            </a>
-            <a
-              href="#about-me"
-              className="font-medium text-gray-500 hover:text-black"
-            >
-              Acerca de mi
-            </a>
-            <a
-              href="#portfolio"
-              className="font-medium text-gray-500 hover:text-black"
-            >
-              Portafolio
-            </a>
+            <Link href="/">
+              <a className="font-medium text-gray-500 hover:text-black">
+                Inicio
+              </a>
+            </Link>
+            <Link href="/#about-me">
+              <a className="font-medium text-gray-500 hover:text-black">
+                Acerca de mi
+              </a>
+            </Link>
+            <Link href="/#portfolio">
+              <a className="font-medium text-gray-500 hover:text-black">
+                Portafolio
+              </a>
+            </Link>
             <Link href="/blog">
               <a className="font-medium text-green hover:text-dark-green">
                 Blog
@@ -110,27 +112,30 @@ export default function Header() {
             aria-labelledby="main-menu"
           >
             <div className="px-2 pt-2 pb-3 space-y-1" role="none">
-              <a
-                href="#"
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-gray-50"
-                role="menuitem"
-              >
-                Inicio
-              </a>
-              <a
-                href="#about-me"
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-gray-50"
-                role="menuitem"
-              >
-                Acerca de mi
-              </a>
-              <a
-                href="#portfolio"
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-gray-50"
-                role="menuitem"
-              >
-                Portafolio
-              </a>
+              <Link href="/">
+                <a
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-gray-50"
+                  role="menuitem"
+                >
+                  Inicio
+                </a>
+              </Link>
+              <Link href="/#about-me">
+                <a
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-gray-50"
+                  role="menuitem"
+                >
+                  Acerca de mi
+                </a>
+              </Link>
+              <Link href="/#portfolio">
+                <a
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-gray-50"
+                  role="menuitem"
+                >
+                  Portafolio
+                </a>
+              </Link>
             </div>
             <div role="none">
               <Link href="/blog">
