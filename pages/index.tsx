@@ -1,14 +1,14 @@
 import { ReactElement, useState } from 'react'
 import Circuit from 'components/circuit'
 import Header from 'components/header'
+import Layout from 'components/layout'
 
 export default function Home(): ReactElement {
   return (
-    <>
+    <Layout>
       <div className="relative bg-white overflow-hidden h-screen">
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-            <Header />
             <main
               id="home"
               className="hidden md:block mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-48"
@@ -155,6 +155,6 @@ export default function Home(): ReactElement {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   )
 }
