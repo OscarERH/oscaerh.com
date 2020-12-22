@@ -57,13 +57,13 @@ export default function Home(): ReactElement {
                     Inicio
                   </a>
                   <a
-                    href="#"
+                    href="#about-me"
                     className="font-medium text-gray-500 hover:text-black"
                   >
                     Acerca de mi
                   </a>
                   <a
-                    href="#"
+                    href="#portfolio"
                     className="font-medium text-gray-500 hover:text-black"
                   >
                     Portafolio
@@ -125,14 +125,14 @@ export default function Home(): ReactElement {
                       Inicio
                     </a>
                     <a
-                      href="#"
+                      href="#about-me"
                       className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-gray-50"
                       role="menuitem"
                     >
                       Acerca de mi
                     </a>
                     <a
-                      href="#"
+                      href="#portfolio"
                       className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-gray-50"
                       role="menuitem"
                     >
@@ -151,7 +151,10 @@ export default function Home(): ReactElement {
                 </div>
               </div>
             </div>
-            <main className="hidden md:block mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-48">
+            <main
+              id="home"
+              className="hidden md:block mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-48"
+            >
               <div className="sm:text-center  lg:text-left">
                 <h1 className="uppercase tracking-wide font-extrabold text-black text-6xl">
                   <span className="text-black text-shadow-sm">Oscar Ruiz </span>
@@ -179,7 +182,10 @@ export default function Home(): ReactElement {
       <div className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-black sm:text-4xl">
+            <h2
+              id="about-me"
+              className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-black sm:text-4xl"
+            >
               Acerca de mi
             </h2>
             <p className="mt-4 max-w-4xl text-xl text-gray-500 lg:mx-auto">
@@ -240,7 +246,10 @@ export default function Home(): ReactElement {
       <div className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-black sm:text-4xl">
+            <h2
+              id="portfolio"
+              className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-black sm:text-4xl"
+            >
               Portafolio
             </h2>
           </div>
@@ -272,7 +281,9 @@ export default function Home(): ReactElement {
                       href="https://omnico.app"
                       className="text-green"
                       target="_blank"
-                    >Omnico</a>
+                    >
+                      Omnico
+                    </a>
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
                     Sistema de gestión de ventas multicanal basado en SaaS.
